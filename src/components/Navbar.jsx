@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { Link } from "react-router";
 
 import Button from "./Button";
 
@@ -61,25 +62,25 @@ const NavBar = () => {
           <div className="flex items-center gap-7">
             <img src="/img/techlogo.jpg" alt="logo" className="w-10" />
 
-            <Button
+            <Link to={"/events"}><Button
               id="events"
               title="Events"
               // rightIcon={<TiLocationArrow />}
               containerClass="hidden md:flex items-center justify-center gap-1 bg-blue-50"
-            />
+            /></Link>
           </div>
 
           {/* Navigation Links and Hamburger Menu */}
           <div className="flex h-full items-center">
             <div className="hidden md:block">
               {navItems.map((item, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`#${item.toLowerCase()}`}
+                  to={`/${item.toLowerCase()}`}
                   className="nav-hover-btn text-black transition-colors duration-300 hover:text-blue-500"
                 >
                   {item}
-                </a>
+                </Link>
               ))}
             </div>
 
@@ -96,14 +97,14 @@ const NavBar = () => {
         {isMobileMenuOpen && (
           <div className="absolute top-16 left-0 w-full bg-white shadow-lg rounded-lg md:hidden">
             {navItems.map((item, index) => (
-              <a
+              <Link
                 key={index}
-                href={`${item.toLowerCase()}`}
-                className="block px-4 py-2 text-black transition-colors duration-300 hover:bg-gray-200"
+                to={`/${item.toLowerCase()}`}
+                className="block px-4 py-2 text-black font-bold transition-colors duration-300 hover:bg-gray-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item}
-              </a>
+              </Link>
             ))}
           </div>
         )}

@@ -271,3 +271,31 @@ body {
     opacity: 0.8;
   }
 }
+
+
+.neon-text {
+  color: #fff;
+  padding: 4px;
+  text-shadow: 
+    0 0 2px #fff, 
+    0 0 4px #fff, 
+    0 0 7px #1cb1bf, 
+    0 0 5px #1cb1bf, 
+     0 0 10px #1cb1bf, 
+     0 0 20px #1cb1bf, 
+   0 0 10px #1cb1bf, 
+    0 0 9px #1cb1bf;
+}
+
+
+ .gradient-text {
+   background: linear-gradient(90deg, #502992, #1083b1);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.venture {
+  background: linear-gradient(90deg, #afd213, #d11414);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}

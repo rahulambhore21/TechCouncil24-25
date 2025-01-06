@@ -3,7 +3,6 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
-
 import Button from "./Button";
 import VideoPreview from "./VideoPreview";
 
@@ -34,6 +33,32 @@ const Hero = () => {
 
     setCurrentIndex((prevIndex) => (prevIndex % totalVideos) + 1);
   };
+
+  useEffect(() => {
+    if (loading) {
+      gsap.fromTo(
+        "#loader-text",
+        { opacity: 0, y: -50 },
+        { opacity: 1, y: 0, duration: 1, ease: "power1.inOut" }
+      );
+      gsap.to("#loader-text", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power1.inOut",
+        delay: 2,
+        onComplete: () => setLoading(false),
+      });
+
+      gsap.to(".dot", {
+        y: -10,
+        repeat: -1,
+        yoyo: true,
+        stagger: 0.2,
+        ease: "power1.inOut",
+      });
+    }
+  }, [loading]);
 
   useGSAP(
     () => {
@@ -80,17 +105,25 @@ const Hero = () => {
     });
   });
 
-  const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+  const getVideoSrc = (index) => `videos/feature-${index}.mp4`;
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {loading && (
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-          {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
-          <div className="three-body">
-            <div className="three-body__dot"></div>
-            <div className="three-body__dot"></div>
-            <div className="three-body__dot"></div>
+          {/* Loader with animated text and jumping dots */}
+          <div className="text-center">
+            <h1
+              id="loader-text"
+              className="special-font text-4xl text-blue-900 mb-4"
+            >
+              Entering the Venture-Verse <span className="dot">.</span><span className="dot">.</span><span className="dot">.</span>
+            </h1>
+            <div className="three-body">
+              <div className="three-body__dot"></div>
+              <div className="three-body__dot"></div>
+              <div className="three-body__dot"></div>
+            </div>
           </div>
         </div>
       )}
@@ -140,31 +173,30 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75 venture">
           Venture-Verse
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-blue-100">
-              ALGORHYTHM
+            <h1 className="special-font hero-heading text-blue-100 ">
+              Welcome To The
             </h1>
 
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              TECH COUNCIL VIT PRESENTS <br /> TECH EVENT
+              TECH COUNCIL VIT PRESENTS <br /> ALGORHYTHM
             </p>
 
-            <Button
+            {/* <Button
               id="watch-trailer"
               title="Watch trailer"
-              leftIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
-            />
+            /> */}
           </div>
         </div>
       </div>
 
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black ">
           Venture-Verse
       </h1>
     </div>
@@ -172,3 +204,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+

@@ -1,25 +1,24 @@
-import About from "./components/About";
-import Hero from "./components/Hero";
-import NavBar from "./components/Navbar";
-import Features from "./components/Features";
-import Story from "./components/Story";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Events from "./components/Events";
+import About_Us from "./page/About_Us";
+import Sponsors from "./page/Sponsors";
+import Contact from "./page/Contact_Us";
+import Testing from "./page/Testing";
+import Home from "./page/Home";
+import { Routes, Route } from "react-router";
+import Events from "./page/Events";
+
 
 function App() {
   return (
-    
-    <main className="relative min-h-screen w-screen overflow-x-hidden">
-      <NavBar />
-      <Hero />
-      <About />
-      <Features />
-      <Story />
-      <Contact />
-      <Events/>
-      <Footer />
-    </main>
+    <>
+      <Routes>
+        <Route path="/" element={<Testing />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/about" element={<About_Us />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/events" element={<Events />} />
+      </Routes>
+    </>
   );
 }
 

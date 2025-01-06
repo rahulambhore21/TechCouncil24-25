@@ -34,15 +34,15 @@ const About = () => {
         </p>
 
         <AnimatedTitle
-          title="Empowering Innovators <br /> and Future Leaders"
-          containerClass="mt-5 !text-black text-center"
+          title="ALGORHYTHM"
+          containerClass="mt-5 !text-black text-center "
         />
 
         <div className="about-subtext text-center max-w-2xl">
-          <p className="mb-2">Join us in our mission to foster technological innovation and leadership.</p>
+          {/* <p className="mb-2">Join us in our mission to foster technological innovation and leadership.</p>
           <p className="text-gray-500">
             The Tech Council of VIT Mumbai is dedicated to providing a platform for students to explore, innovate, and excel in the field of technology.
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -60,3 +60,5 @@ const About = () => {
 };
 
 export default About;
+
+

@@ -15,7 +15,7 @@ const Footer = () => {
           ©Tech Council Vit. All rights reserved
         </p>
         <p className="text-center text-sm font-light md:text-left">
-          Developed by <b>Adarsh Meshram</b> and <b>Rahul Ambhore</b>
+          Developed by <a href="https://github.com/adarshmeshram" target="_blank" rel="noopener noreferrer"><b>Adarsh Meshram</b></a> and <a href="https://rahulambhore21.github.io/Portfolio" target="_blank" rel="noopener noreferrer"><b>Rahul Ambhore</b></a>
         </p>
         <div className="flex justify-center gap-4  md:justify-start">
           {socialLinks.map((link, index) => (
@@ -33,7 +33,7 @@ const Footer = () => {
 
         <a
           href="#privacy-policy"
-          className="text-center text-sm font-light hover:underline md:text-right"
+          className="text-center mr-2 text-sm font-light hover:underline md:text-right"
         >
           Privacy Policy
         </a>
