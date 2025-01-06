@@ -1,7 +1,6 @@
 import About_Us from "./page/About_Us";
 import Sponsors from "./page/Sponsors";
 import Contact from "./page/Contact_Us";
-import Testing from "./page/Testing";
 import Home from "./page/Home";
 import { Routes, Route } from "react-router";
 import Events from "./page/Events";

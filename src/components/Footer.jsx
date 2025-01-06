@@ -1,10 +1,8 @@
-import { FaDiscord, FaTwitter, FaYoutube, FaMedium } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const socialLinks = [
-  { href: "https://discord.com", icon: <FaDiscord /> },
-  { href: "https://twitter.com", icon: <FaTwitter /> },
-  { href: "https://youtube.com", icon: <FaYoutube /> },
-  { href: "https://medium.com", icon: <FaMedium /> },
+  { href: "https://www.instagram.com/technical_council.vit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: <FaInstagram /> },
+  
 ];
 
 const Footer = () => {
@@ -24,7 +22,7 @@ const Footer = () => {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black transition-colors duration-500 ease-in-out hover:text-white"
+              className="text-black transition-colors duration-500 mr-10  ease-in-out hover:text-white"
             >
               {link.icon}
             </a>
@@ -33,7 +31,7 @@ const Footer = () => {
 
         <a
           href="#privacy-policy"
-          className="text-center mr-2 text-sm font-light hover:underline md:text-right"
+          className="text-center hidden mr-2 text-sm font-light hover:underline md:text-right"
         >
           Privacy Policy
         </a>

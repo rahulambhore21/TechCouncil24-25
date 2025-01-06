@@ -1,5 +1,4 @@
 import AnimatedTitle from "../components/AnimatedTitle";
-import Button from "../components/Button";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -14,10 +13,10 @@ const ContactPerson = ({ position, name, number, email }) => (
     <h3 className="font-bold text-xl mb-2">{position}</h3>
     <p className="mb-1">Name: {name}</p>
     <p className="mb-1">
-      Phone: <a href={`tel:${number}`} className="text-blue-400">{number}</a>
+      Phone: <a href={`tel:${number}`} className="text-white">{number}</a>
     </p>
     <p className="mb-1">
-      Email: <a href={`mailto:${email}`} className="text-blue-400">{email}</a>
+      Email: <a href={`mailto:${email}`} className="text-white">{email}</a>
     </p>
   </div>
 );

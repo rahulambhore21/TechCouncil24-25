@@ -79,7 +79,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 
         {isComingSoon && (
           <Link
-            to="/events"
+            to={{ pathname: "/events", hash: "#top" }}
             ref={hoverButtonRef}
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
@@ -95,7 +95,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               }}
             />
             {/* <TiLocationArrow className="relative z-20" /> */}
-            <p className="relative text-yellow-500 z-20">Explore</p>
+            <p className="relative text-yellow-500 z-20">Registration</p>
           </Link>
         )}
       </div>
