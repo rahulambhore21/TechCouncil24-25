@@ -2,24 +2,24 @@ import React from 'react'
 import "./Cards.css"
 import Button from '../Button'
 
-function Cards({ img, title, onSeeMoreClick, onRegisterClick, onDownloadClick }) {
+function Cards({ description,council,img, title, onSeeMoreClick, onRegisterClick, onDownloadClick }) {
   return (
     <div className="item">
       <img src={img} alt={title} onClick={onSeeMoreClick} />
       <div className="introduce">
-        <div className="title hero-heading">DESIGN SLIDER</div>
+        <div className="title hero-heading">{council}</div>
         <div className="topic hero-heading">{title}</div>
-        <div className="des font-robert-regular">
+        {/* <div className="des font-robert-regular">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-        </div>
+        </div> */}
         <button className="seeMore" onClick={onSeeMoreClick}>SEE MORE</button>
       </div>
       <div className="detail">
-        <div className="title hero-heading">Aerphone GHTK</div>
-        <div className="des">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+        <div className="title hero-heading">{title}</div>
+        <div className="des text-white font-bold text-lg text-left ml-4">
+          {description}
         </div>
-        <div className="specifications">
+        {/* <div className="specifications">
           <div>
             <p>Used Time</p>
             <p>6 hours</p>
@@ -40,7 +40,7 @@ function Cards({ img, title, onSeeMoreClick, onRegisterClick, onDownloadClick })
             <p>Controlled</p>
             <p>Touch</p>
           </div>
-        </div>
+        </div> */}
         <div className="checkout">
           <button onClick={onRegisterClick}>Registration</button>
           <button onClick={onDownloadClick}>Download PDF</button>

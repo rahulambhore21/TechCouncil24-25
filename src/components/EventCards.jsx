@@ -1,17 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { BentoTilt, BentoCard } from './Features';
-import sampleImage from '../assets/poster/aquasurge.webp'; // Sample image
 import AnimatedTitle from "./AnimatedTitle";
-
-// Generate events data
-const generateEvents = (count) => {
-  return Array.from({ length: count }, (_, index) => ({
-    src: sampleImage,
-    title: `Event ${index + 1}`,
-    description: `Description for Event ${index + 1}`,
-  }));
-};
+import { object as events } from './Slider/Slider';
+import backgroundImage from "/img/bg-3.jpg"; 
 
 const handleDownloadPDF = (eventTitle) => {
   const link = document.createElement('a');
@@ -24,11 +16,12 @@ const handleExploreLink = (eventTitle) => {
   window.location.href = `/explore/${eventTitle}`; // Adjust the path as needed
 };
 
-const Events = ({ eventCount }) => {
-  const events = generateEvents(eventCount);
-
+const Events = () => {
   return (
-    <section className="bg-black pb-52">
+    <section 
+      className="bg-black pb-52"
+      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} // Add background image styles
+    >
       <div className="container mx-auto px-3 md:px-10">
         <div className="px-5 py-32">
           <AnimatedTitle
@@ -44,7 +37,7 @@ const Events = ({ eventCount }) => {
               className="border-hsla relative mb-7 h-72 md:h-96 w-full md:w-4/5 self-center overflow-hidden rounded-md transition-transform transform hover:scale-105"
             >
               <BentoCard
-                src={event.src}
+                src={event.img}
                 title={event.title}
                 description={event.description}
                 isComingSoon
