@@ -17,6 +17,7 @@ import v2v from "../../assets/poster/v2v.jpg";
 import waterro from "../../assets/poster/waterro.jpg";
 import codecombat from "../../assets/poster/codecombat.jpg";
 import Button from "../Button";
+import backgroundImage from "/img/bg-1.png"; // Import background image
 
 export const object =  [
   {
@@ -190,7 +191,11 @@ const Slider = () => {
   };
 
   return (
-    <div className={`carousel ${showDetail ? 'showDetail' : ''}`} ref={carouselRef}>
+    <div 
+      className={`carousel ${showDetail ? 'showDetail' : ''}`} 
+      ref={carouselRef}
+      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} // Add background image styles
+    >
       <div className="list" ref={listRef}>
         {object.map((item, index) => (
           <Cards

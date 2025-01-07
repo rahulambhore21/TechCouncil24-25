@@ -110,12 +110,7 @@ const NavBar = () => {
                 {item}
               </Link>
             ))}
-            <Link to={"/events"}><Button
-              id="events"
-              title="Events"
-              containerClass="block w-full px-4 py-2 text-center text-black font-bold transition-colors duration-300 hover:bg-gray-200"
-              onClick={() => setIsMobileMenuOpen(false)}
-            /></Link>
+         
           </div>
         )}
       </header>

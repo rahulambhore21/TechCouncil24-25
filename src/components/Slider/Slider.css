@@ -32,9 +32,6 @@
     position: relative;
     height: 800px;
     overflow: hidden;
-    background-image: url("img/bg-1.png"); 
-    background-size: cover; 
-    background-position: center; 
 }
 .carousel .list{
     position: absolute;
