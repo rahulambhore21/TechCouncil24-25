@@ -5,7 +5,7 @@ import groklive from "../../assets/poster/groklive.png";
 import mechvelocity from "../../assets/poster/mechvelocity.png";
 import robokick from "../../assets/poster/robokick.png";
 import steelstriker from "../../assets/poster/steelstriker.png";
-import ipl from "../../assets/poster/ipl.jpg";
+import ipl from "../../assets/poster/ipl.webp";
 import maze from "../../assets/poster/maze.png";
 import iste from "../../assets/poster/iste.jpg";
 import revolutionx from "../../assets/poster/revolutionx.jpg";
