@@ -1,19 +1,72 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
-import { BentoTilt, BentoCard } from './Features';
+import { BentoTilt } from './Features';
 import AnimatedTitle from "./AnimatedTitle";
-import { object as events } from './Slider/Slider';
+import { object as events } from './Slider/eventData';
 import backgroundImage from "/img/bg-3.jpg"; 
 
-const handleDownloadPDF = (eventTitle) => {
+const handleDownloadPDF = (pdfUrl) => {
+  if (!pdfUrl) return;
   const link = document.createElement('a');
-  link.href = `/path/to/pdf/${eventTitle}.pdf`; // Adjust the path as needed
-  link.download = `${eventTitle}.pdf`;
+  link.href = pdfUrl;
+  link.download = pdfUrl.split('/').pop();
+  document.body.appendChild(link);
   link.click();
+  document.body.removeChild(link);
 };
 
 const handleExploreLink = (eventTitle) => {
   window.location.href = `/explore/${eventTitle}`; // Adjust the path as needed
+};
+
+const BentoCard = ({ src, title, description, registration = null, onClick, onDoubleClick, onRegisterClick }) => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [hoverOpacity, setHoverOpacity] = useState(0);
+  const hoverButtonRef = useRef(null);
+
+  const handleMouseMove = (event) => {
+    if (!hoverButtonRef.current) return;
+    const rect = hoverButtonRef.current.getBoundingClientRect();
+
+    setCursorPosition({
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+    });
+  };
+
+  const handleButtonClick = (event) => {
+    event.stopPropagation();
+    onRegisterClick();
+  };
+
+  return (
+    <div 
+      className="relative h-full w-full overflow-hidden" 
+      onMouseMove={handleMouseMove}
+      onClick={onClick}
+      onDoubleClick={onDoubleClick}
+    >
+      <img src={src} alt={title} className="h-full w-full object-cover" />
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4 overflow-hidden"> 
+        <h3 className="text-xl font-bold">{title}</h3>
+        <p className="mt-2">{description}</p>
+        <button 
+          ref={hoverButtonRef}
+          className="mt-4 p-2 shadow__btn text-xs md:text-base" // Add responsive text size
+          style={{ opacity: hoverOpacity }}
+          onClick={handleButtonClick}
+        >
+          Register
+        </button>
+        <button 
+          className="mt-2 p-2 shadow__btn text-xs md:text-base" // Add responsive text size
+          onClick={handleButtonClick}
+        >
+          Register Now
+        </button>
+      </div>
+    </div>
+  );
 };
 
 const Events = () => {
@@ -40,9 +93,10 @@ const Events = () => {
                 src={event.img}
                 title={event.title}
                 description={event.description}
-                isComingSoon
-                onClick={() => handleDownloadPDF(event.title)}
+                registration={event.registrationLink || 'defaultRegistrationLink'} // Ensure registration prop is passed
+                onClick={() => handleDownloadPDF(event.pdf)}
                 onDoubleClick={() => handleExploreLink(event.title)}
+                onRegisterClick={() => window.location.href = event.registrationLink || 'defaultRegistrationLink'} // Use the registration link from the event object
               />
             </BentoTilt>
           ))}
