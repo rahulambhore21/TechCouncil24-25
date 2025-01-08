@@ -124,7 +124,7 @@ const Features = () => {
             src={aquasurge}
             title={
               <>
-                Aqua<b>Surge</b>
+                AquaSurge
               </>
             }
             description="Experience the ultimate water adventure with AquaSurge, featuring thrilling rides and attractions."
@@ -138,7 +138,7 @@ const Features = () => {
               src={codeathon}
               title={
                 <>
-                  Code<b>Athon</b>
+                  CodeAthon
                 </>
               }
               description="Join the ultimate coding competition and showcase your programming skills at CodeAthon."
@@ -151,7 +151,7 @@ const Features = () => {
               src={droneracing}
               title={
                 <>
-                  Drone<b>Racing</b>
+                  DroneRacing
                 </>
               }
               description="Experience the thrill of high-speed drone racing with cutting-edge technology."
@@ -164,7 +164,7 @@ const Features = () => {
               src={mechvelocity}
               title={
                 <>
-                  Mech<b>Velocity</b>
+                  MechVelocity
                 </>
               }
               description="Step into the future with MechVelocity, featuring advanced robotics and AI technology."
@@ -186,7 +186,7 @@ const Features = () => {
               src={robokick}
               title={
                 <>
-                  Mech<b>Velocity</b>
+                  MechVelocity
                 </>
               }
               description="Step into the future with MechVelocity, featuring advanced robotics and AI technology."

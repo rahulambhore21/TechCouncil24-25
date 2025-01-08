@@ -43,22 +43,22 @@ const Contact = () => {
           <h2 className="text-3xl font-bold mb-6 text-center">Events Head</h2>
           <div className="grid grid-cols-1 gap-6"> 
             <ContactPerson
-              position="Head of Events"
-              name="John Doe"
-              number="+12345678901"
-              email="john.doe@example.com"
+              position="Technical Secretary"
+              name="Sahil Manjrekar"
+              number="+918779449435"
+              email="sahil.manjrekar@vit.edu.in"
             />
             <ContactPerson
-              position="Assistant Head of Events"
-              name="Jane Smith"
-              number="+0987654321"
-              email="jane.smith@example.com"
+              position="Jt.Technical Secretary"
+              name="Sahil Rajadhyaksha"
+              number="+918806775568"
+              email="sahil.rajadhyaksha@vit.edu.in"
             />
             <ContactPerson
-              position="Event Coordinator"
-              name="Alice Johnson"
-              number="+1122334455"
-              email="alice.johnson@example.com"
+              position="Jt.Technical Secretary"
+              name="Vivek Mishra"
+              number="+919324820701"
+              email="vivek.mishra@vit.edu.in"
             />
           </div>
         </div>
