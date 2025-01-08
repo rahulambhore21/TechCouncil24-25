@@ -22,7 +22,16 @@ export const object =  [
     "img": robokick,
     "pdf": "/pdf/robokick.pdf",
     "registrationLink": "https://forms.gle/1nhh4uMruDG4Uf8J6" 
-  },{
+  },
+  {
+    "title": "Code-a-thon",
+    "description": "An 8-hour software hackathon that pushes developers to their limits. Teams collaborate to craft innovative solutions, fostering creativity, teamwork, and problem-solving in a dynamic coding environment.",
+    "img": codeathon,
+    "pdf": "/pdf/codeathon.pdf",
+    "registrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSdiwJa5y27GlY2qC9nEJ1kRWV3nhujPCBal3rV0ANvaDs2xsQ/viewform?usp=header"
+
+  },
+  {
     "title": "Aqua Surge",
     "description": "Dive into the world of underwater robotics! Teams design and build robots to navigate aquatic challenges, showcasing their engineering skills, creativity, and problem-solving abilities in a thrilling competition.",
     "img": aquasurge,
@@ -50,14 +59,7 @@ export const object =  [
     "pdf": "/pdf/groklive.pdf",
     "registrationLink":"https://forms.gle/hMRAqACXHb7KwmRR6"
   },
-  {
-    "title": "Code-a-thon",
-    "description": "An 8-hour software hackathon that pushes developers to their limits. Teams collaborate to craft innovative solutions, fostering creativity, teamwork, and problem-solving in a dynamic coding environment.",
-    "img": codeathon,
-    "pdf": "/pdf/codeathon.pdf",
-    "registrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSdiwJa5y27GlY2qC9nEJ1kRWV3nhujPCBal3rV0ANvaDs2xsQ/viewform?usp=header"
-
-  },
+  
   {
     "title": "Drone Racing",
     "description": "Test your drone's agility and speed in this high-octane race! Participants navigate complex courses with precision, showcasing advanced control and piloting skills in a thrilling competition.",

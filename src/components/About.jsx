@@ -29,7 +29,7 @@ const About = () => {
   return (
     <div id="about" className="min-h-screen w-screen bg-gray-100">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5 px-4">
-        <p className="font-general text-sm uppercase text-blue-600 md:text-[10px]">
+        <p className="font-bold text-sm uppercase text-black md:text-2xl">
           Welcome to Tech Council VIT Mumbai
         </p>
 
