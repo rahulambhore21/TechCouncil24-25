@@ -103,7 +103,7 @@ export const object =  [
     "registrationLink":"https://forms.gle/aMbaWM67JRykqpKp7"
   },
   {
-    "title": "It’s a Maze Solver",
+    "title": "ITSA a Maze Solver",
     "description": "Embark on a thrilling journey to crack the mystery of the maze! Use your problem-solving skills, agility, and wit to complete each stage and emerge victorious.",
     "img": maze,
     "pdf": "/pdf/maze.pdf",
@@ -114,7 +114,7 @@ export const object =  [
     "description": "Prepare for the ultimate speed coding showdown! Compete against other coding giants to debug, accelerate, and conquer challenges in a fast-paced environment.",
     "img": codecombat,
     "pdf": "/pdf/codecombat.pdf",
-    "registrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSeiWn1dxcGJqcEs6aDWTfOkhsgVDP0hmT0OQNYHy3gVCR2gDw/vie"
+    "registrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSeiWn1dxcGJqcEs6aDWTfOkhsgVDP0hmT0OQNYHy3gVCR2gDw/viewform?usp=header"
   },
   {
     "title": "ISTE – Innovation Auction League",
