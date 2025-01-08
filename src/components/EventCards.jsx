@@ -16,7 +16,7 @@ const handleDownloadPDF = (pdfUrl) => {
 };
 
 const handleExploreLink = (eventTitle) => {
-  window.location.href = `/explore/${eventTitle}`; // Adjust the path as needed
+  window.open(`/explore/${eventTitle}`, '_blank', 'noopener,noreferrer'); 
 };
 
 const BentoCard = ({ src, title, description, registration = null, onClick, onDoubleClick, onRegisterClick }) => {

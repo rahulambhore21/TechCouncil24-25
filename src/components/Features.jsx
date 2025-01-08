@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { Link } from "react-router";
 import aquasurge from "../assets/poster/aquasurge.webp";
-import codeathon from "../assets/poster/codeathon.webp";
+import codeathon from "../assets/poster/codeathon.png";
 import droneracing from "../assets/poster/droneracing.png";
 import mechvelocity from "../assets/poster/mechvelocity.png";
 import robokick from "../assets/poster/robokick.png";
