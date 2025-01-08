@@ -4,6 +4,7 @@ import Contact from "./page/Contact_Us";
 import Home from "./page/Home";
 import { Routes, Route } from "react-router";
 import Events from "./page/Events";
+import Notfound from "./page/Notfound";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About_Us />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/events" element={<Events />} />
+        <Route path="*" element={<Notfound/>} />
       </Routes>
     </>
   );

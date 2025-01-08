@@ -91,7 +91,7 @@ export const object =  [
     "description": "Combine physics and fun in this exciting water rocket competition! Attend a workshop, design your rocket, and see how high it can fly.",
     "img": waterro,
     "pdf": "/pdf/waterro.pdf", 
-    "registrationLink": "https://forms.gle/8pFLfwsjs7DWkYuY7"
+    "registrationLink": "https://forms.gle/hsznkZXPvt6qfNrV6"
   },
   {
     "title": "IEEE VIT – Vision to Venture",
