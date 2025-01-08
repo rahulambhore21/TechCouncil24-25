@@ -2,14 +2,14 @@ import AnimatedTitle from "../components/AnimatedTitle";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const ImageClipBox = ({ src, clipClass }) => (
-  <div className={clipClass}>
-    <img src={src} className="w-full h-full object-cover" />
-  </div>
-);
+// const ImageClipBox = ({ src, clipClass }) => (
+//   <div className={clipClass}>
+//     <img src={src} className="w-full h-full object-cover" />
+//   </div>
+// );
 
 const ContactPerson = ({ position, name, number, email }) => (
-  <div className="contact-person p-4  bg-gray-800 rounded-lg shadow-lg text-center rounded-xl">
+  <div className="contact-person p-4  bg-gray-800 shadow-lg text-center rounded-xl">
     <h3 className="font-bold text-xl mb-2">{position}</h3>
     <p className="mb-1">Name: {name}</p>
     <p className="mb-1">

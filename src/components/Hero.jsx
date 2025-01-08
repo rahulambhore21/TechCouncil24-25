@@ -104,6 +104,7 @@ const Hero = () => {
   });
 
   const getVideoSrc = (index) => `videos/Hero-${index}.mp4`;
+  const getPosterSrc = () => `img/img-3.jpg`;
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
@@ -145,6 +146,7 @@ const Hero = () => {
                   id="current-video"
                   className="size-64 origin-center scale-150 object-cover object-center"
                   onLoadedData={handleVideoLoad}
+                  poster={getPosterSrc((currentIndex % totalVideos) + 1)}
                 />
               </div>
             </VideoPreview>
@@ -158,6 +160,7 @@ const Hero = () => {
             id="next-video"
             className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
             onLoadedData={handleVideoLoad}
+            poster={getPosterSrc(currentIndex)}
           />
           <video
             src={getVideoSrc(
@@ -168,6 +171,7 @@ const Hero = () => {
             muted
             className="absolute left-0 top-0 size-full object-cover object-center"
             onLoadedData={handleVideoLoad}
+            poster={getPosterSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
           />
         </div>
 
