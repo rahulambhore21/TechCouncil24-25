@@ -44,7 +44,7 @@ export const object =  [
     "registrationLink":"https://docs.google.com/forms/d/e/1FAIpQLScP97Jvqwb47QoaW-hhZcU3hcHSKoz4GFGa66syGX4xracUYw/viewform?usp=header"
   },
   {
-    "title": "Grock Live",
+    "title": "Grok Live",
     "description": "Step into the future with real-life IoT challenges designed to spark innovation and critical thinking. Participants tackle problem-solving on the spot while exploring advanced IoT specimens, gaining hands-on experience in cutting-edge technology.",
     "img": groklive,
     "pdf": "/pdf/groklive.pdf",

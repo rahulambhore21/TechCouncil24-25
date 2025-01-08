@@ -186,10 +186,10 @@ const Features = () => {
               src={robokick}
               title={
                 <>
-                  MechVelocity
+                  RoboKick
                 </>
               }
-              description="Step into the future with MechVelocity, featuring advanced robotics and AI technology."
+              description="Experience the thrill of RoboKick, where cutting-edge robotics meet competitive sports in an exhilarating showdown."
               isComingSoon
             />
           </BentoTilt>

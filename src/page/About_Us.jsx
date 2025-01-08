@@ -66,7 +66,7 @@ autonomous college
 
       <div className="w-full py-12 bg-gray-100 flex flex-col items-center px-4">
         <h2 className="text-3xl font-bold mb-4 text-center">About the Council</h2>
-        <img src="/img/techlogo.jpg" alt="Council" className="w-full h-auto mb-4 rounded-lg shadow-lg"/>
+        <img src="/img/techlogo.jpg" alt="Council" className="w-1/2 h-auto mb-4 rounded-lg shadow-lg"/>
         <p className="font-serif text-gray-700 max-w-2xl text-center">
           The Technical Council of VIT is a vital part of the Student Council, embodying the spirit of innovation, creativity, and social responsibility. It serves as a dynamic platform where students come together to explore cutting-edge technologies, solve real-world challenges, and transform visionary ideas into practical, impactful solutions. This council is the driving force behind VIT’s technical ecosystem, organizing diverse events such as hackathons, workshops, coding marathons, and ideation sessions. These activities are designed to foster technical excellence, ignite creativity, and encourage collaboration among students. By offering such opportunities, the Technical Council ensures that students are well-prepared to thrive in a fast-evolving, technology-driven world.
         </p>
@@ -83,7 +83,7 @@ autonomous college
 
       <div className="w-full py-12 bg-black flex flex-col items-center px-4">
         <h2 className="text-3xl font-bold mb-4 text-center">About the Fest</h2>
-        <img src="/img/arlogo.png" alt="Fest" className="w-full h-auto mb-4 rounded-lg shadow-lg"/>
+        <img src="/img/arlogo.png" alt="Fest" className="w-1/2 h-auto mb-4 rounded-lg shadow-lg"/>
         <p className="font-serif text-white max-w-2xl text-center">
           Algorhythm, the annual techfest of VIT, is a grand celebration of innovation, technology, and creativity. Organized by the Technical Council, it provides a vibrant platform where students from diverse colleges converge to showcase their talents, explore emerging technologies, and engage in spirited competitions.
         </p>

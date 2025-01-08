@@ -185,7 +185,7 @@ const Hero = () => {
               Welcome To The
             </h1>
 
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
+            <p className="mb-5 max-w-64 font-robert-regular text-black  font-bold">
               TECH COUNCIL VIT PRESENTS <br /> ALGORHYTHM
             </p>
 

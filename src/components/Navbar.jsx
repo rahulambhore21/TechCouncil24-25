@@ -60,7 +60,7 @@ const NavBar = () => {
         <nav className="flex items-center justify-between p-4 bg-black shadow-md rounded-lg size-full">
           {/* Logo and Product button */}
           <div className="flex items-center gap-7">
-            <img src="/img/techlogo.jpg" alt="logo" className="w-10" />
+            <img src="/img/techlogo.png" alt="logo" className="w-10" />
 
             <Link to={"/events"}><Button
               id="events"
