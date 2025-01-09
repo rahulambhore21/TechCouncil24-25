@@ -100,7 +100,7 @@ export const object =  [
     "description": "Step into the world of business and strategy! Develop innovative ideas, tackle real-world scenarios, and pitch your way to success in this entrepreneurial challenge.",
     "img": v2v,
     "pdf": "/pdf/v2v.pdf",
-    "registrationLink":"https://forms.gle/aMbaWM67JRykqpKp7"
+    "registrationLink":"https://forms.gle/1f94ZJMGBZnMX9vT8"
   },
   {
     "title": "ITSA a Maze Solver",
