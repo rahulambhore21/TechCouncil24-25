@@ -45,25 +45,30 @@ const BentoCard = ({ src, title, description, registration = null, onClick, onDo
       onMouseMove={handleMouseMove}
       onClick={onClick}
       onDoubleClick={onDoubleClick}
+      style={{ height: 'auto', width: 'auto' }} // Adjust card size to match poster
     >
-      <img src={src} alt={title} className="h-full w-full object-cover" />
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4 overflow-hidden"> 
-        <h3 className="text-xl font-bold">{title}</h3>
-        <p className="mt-2">{description}</p>
-        <button 
-          ref={hoverButtonRef}
-          className="mt-4 p-2 shadow__btn text-xs md:text-base" // Add responsive text size
-          style={{ opacity: hoverOpacity }}
-          onClick={handleButtonClick}
-        >
-          Register
-        </button>
-        <button 
-          className="mt-2 p-2 shadow__btn text-xs md:text-base" // Add responsive text size
-          onClick={handleButtonClick}
-        >
-          Register Now
-        </button>
+      <img src={src} alt={title} className="h-full w-full object-fit" />
+      <div className="absolute inset-0 flex flex-col justify-between items-center text-white p-4 overflow-hidden"> 
+        <div className="flex flex-col items-center">
+          <h3 className="text-xl font-bold">{title}</h3>
+          <p className="mt-2">{description}</p>
+        </div>
+        <div className="flex flex-col items-center">
+          {/* <button 
+            ref={hoverButtonRef}
+            className="mt-4 p-2 shadow__btn text-xs md:text-base" // Add responsive text size
+            style={{ opacity: hoverOpacity }}
+            onClick={handleButtonClick}
+          >
+            Register
+          </button> */}
+          <button 
+            className="mt-2 p-2 mb-7 shadow__btn text-xs md:text-base" // Add responsive text size
+            onClick={handleButtonClick}
+          >
+            Register Now
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -87,12 +92,12 @@ const Events = () => {
           {events.map((event, index) => (
             <BentoTilt 
               key={index} 
-              className="border-hsla relative mb-7 h-72 md:h-96 w-full md:w-4/5 self-center overflow-hidden rounded-md transition-transform transform hover:scale-105"
+              className="border-hsla relative mb-7 h-auto w-auto self-center overflow-hidden rounded-md transition-transform transform hover:scale-105" // Adjust card size to match poster
             >
               <BentoCard
                 src={event.img}
-                title={event.title}
-                description={event.description}
+                // title={event.title}
+                // description={event.description}
                 registration={event.registrationLink || 'defaultRegistrationLink'} // Ensure registration prop is passed
                 onClick={() => handleDownloadPDF(event.pdf)}
                 onDoubleClick={() => handleExploreLink(event.title)}

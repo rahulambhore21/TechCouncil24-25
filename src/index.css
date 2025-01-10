@@ -289,13 +289,13 @@ body {
 
 
  .gradient-text {
-   background: linear-gradient(90deg, #502992, #1083b1);
+   background: linear-gradient(90deg, #00BFFF, #00FFFF );
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .venture {
-  background: linear-gradient(90deg, #afd213, #d11414);
+  background: linear-gradient(90deg, #FF8C00, #FFD700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }

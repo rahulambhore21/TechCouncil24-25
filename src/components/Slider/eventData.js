@@ -9,10 +9,11 @@ import ipl from "../../assets/poster/ipl.webp";
 import maze from "../../assets/poster/maze.png";
 import iste from "../../assets/poster/iste.jpg";
 import revolutionx from "../../assets/poster/revolutionx.jpg";
-import v2v from "../../assets/poster/v2v.jpg";
+import v2v from "../../assets/poster/v2v.webp";
 import waterro from "../../assets/poster/waterro.jpg";
 import codecombat from "../../assets/poster/codecombat.jpg";
 import shapetheweb from "../../assets/poster/shapetheweb.jpg";
+import imgpro from "../../assets/poster/imgpro.webp";
 
 export const object =  [
   {
@@ -122,5 +123,11 @@ export const object =  [
     "img": iste,
     "pdf": "/pdf/iste.pdf",
     "registrationLink":"https://forms.gle/NAtVu57DrBUkbwWW6"
+  },
+  {
+    "title": "ISTE – Innovation Auction League",
+    "description": "Image Processing transforms visual data to reveal pattern enchance detalis and drive innovation. Don't miss the exciting workshop!",
+    "img": imgpro,
+    "registrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSePbfFk77subRkwbaTl5ZEXW_fadIZTAoa0CI7zrPl2vNqSSw/viewform?usp=send_form"
   }
 ]
