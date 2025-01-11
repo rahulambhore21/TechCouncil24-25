@@ -2,7 +2,7 @@ import About_Us from "./page/About_Us";
 import Sponsors from "./page/Sponsors";
 import Contact from "./page/Contact_Us";
 import Home from "./page/Home";
-import { Routes, Route } from "react-router-dom"; // Updated import
+import { Routes, Route } from "react-router"; // Updated import
 import Events from "./page/Events";
 import Notfound from "./page/Notfound";
 
