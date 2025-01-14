@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import aquasurge from "../assets/poster/aquasurge.webp";
 import codeathon from "../assets/poster/codeathon.png";
 import droneracing from "../assets/poster/droneracing.png";
-import mechvelocity from "../assets/poster/mechvelocity.png";
+import mechvelocity from "../assets/poster/mechvelocity.jpg";
 import robokick from "../assets/poster/robokick.png";
 import AnimatedTitle from "./AnimatedTitle";
 
