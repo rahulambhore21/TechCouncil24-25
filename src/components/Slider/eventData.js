@@ -26,7 +26,7 @@ export const object =  [
   },
   {
     "title": "Code-a-thon",
-    "description": "An 8-hour software hackathon that pushes developers to their limits. Teams collaborate to craft innovative solutions, fostering creativity, teamwork, and problem-solving in a dynamic coding environment.",
+    "description": "An 6-hour software hackathon that pushes developers to their limits. Teams collaborate to craft innovative solutions, fostering creativity, teamwork, and problem-solving in a dynamic coding environment.",
     "img": codeathon,
     "pdf": "/pdf/codeathon.pdf",
     "registrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSdiwJa5y27GlY2qC9nEJ1kRWV3nhujPCBal3rV0ANvaDs2xsQ/viewform?usp=header"
