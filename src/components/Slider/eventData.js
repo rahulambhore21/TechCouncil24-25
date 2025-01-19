@@ -125,7 +125,7 @@ export const object =  [
     "registrationLink":"https://forms.gle/NAtVu57DrBUkbwWW6"
   },
   {
-    "title": "ISTE – Innovation Auction League",
+    "title": "Digital Image Processing",
     "description": "Image Processing transforms visual data to reveal pattern enchance detalis and drive innovation. Don't miss the exciting workshop!",
     "img": imgpro,
     "registrationLink":"https://docs.google.com/forms/d/e/1FAIpQLSePbfFk77subRkwbaTl5ZEXW_fadIZTAoa0CI7zrPl2vNqSSw/viewform?usp=send_form"
