@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import { FaInstagram, FaLinkedin, FaFacebook, FaGlobe } from "react-icons/fa"
+import { FaFacebook, FaTwitter, FaGlobe, FaEnvelope } from "react-icons/fa"
 
 const socialLinks = [
-  { href: "https://www.instagram.com/technical_council.vit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: <FaInstagram /> },
-  { href: "https://www.linkedin.com/company/grokacademy", icon: <FaLinkedin /> },
   { href: "https://www.facebook.com/grokacademy", icon: <FaFacebook /> },
-  { href: "https://www.grokacademy.org", icon: <FaGlobe /> },
+  { href: "https://twitter.com/grokacademy", icon: <FaTwitter /> },
+  { href: "https://groklearning.com/", icon: <FaGlobe /> },
+  { href: "mailto:support@groklearning.com", icon: <FaEnvelope /> },
 ];
 
 function Sponsors() {
@@ -15,7 +15,7 @@ function Sponsors() {
     <div className="content-wrapper">
       <Navbar/>
       <div className="w-full h-32 py-28 bg-gray-800 flex justify-center items-center">
-        <h1 className="text-white text-4xl">Sponsors</h1>
+        <h1 className="text-white text-4xl">Title Sponsors</h1>
       </div>
       <div className="w-full py-12 bg-gray-100 flex flex-col items-center px-4">
        
@@ -36,7 +36,7 @@ function Sponsors() {
         <h2 className="text-gray-800 text-3xl mb-4">Follow Us</h2>
         <div className="flex space-x-4">
           {socialLinks.map((link, index) => (
-            <a key={index} href={link.href} className="text-pink-500">
+            <a key={index} href={link.href} className="text-pink-500" target="_blank" rel="noopener noreferrer">
               {link.icon}
             </a>
           ))}
