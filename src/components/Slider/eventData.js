@@ -1,7 +1,7 @@
 import aquasurge from "../../assets/poster/aquasurge.webp";
 import codeathon from "../../assets/poster/codeathon.png";
 import droneracing from "../../assets/poster/droneracing.png";
-import groklive from "../../assets/poster/groklive.jpg";
+import groklive from "../../assets/poster/grok.png";
 import mechvelocity from "../../assets/poster/mechvelocity.jpg";
 import robokick from "../../assets/poster/robokick.jpg";
 import steelstriker from "../../assets/poster/steelstriker.jpg";
@@ -57,8 +57,8 @@ export const object =  [
     "title": "Grok Live",
     "description": "Step into the future with real-life IoT challenges designed to spark innovation and critical thinking. Participants tackle problem-solving on the spot while exploring advanced IoT specimens, gaining hands-on experience in cutting-edge technology.",
     "img": groklive,
-    "pdf": "/pdf/groklive.pdf",
-    "registrationLink":"https://forms.gle/hMRAqACXHb7KwmRR6"
+    // "pdf": "/pdf/groklive.pdf",
+    "registrationLink":"https://unstop.com/o/cX6lvtR?lb=6mh9LMns"
   },
   
   {
