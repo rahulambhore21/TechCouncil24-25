@@ -1,12 +1,15 @@
 import React from 'react'
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import { FaFacebook, FaTwitter, FaGlobe, FaEnvelope } from "react-icons/fa"
+import { FaFacebook, FaTwitter, FaGlobe, FaEnvelope, FaInstagram } from "react-icons/fa"
+import { FaLinkedin } from 'react-icons/fa6';
 
 const socialLinks = [
-  { href: "https://www.facebook.com/grokacademy", icon: <FaFacebook /> },
-  { href: "https://twitter.com/grokacademy", icon: <FaTwitter /> },
-  { href: "https://groklearning.com/", icon: <FaGlobe /> },
+  { href: "https://www.grovator.com/", icon: <FaGlobe /> },
+  { href: "https://instagram.com/grovator.official?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D", icon: <FaInstagram /> },
+  { href: "https://www.linkedin.com/company/grovator/", icon: <FaLinkedin /> },
+  { href: "https://www.facebook.com/profile.php?id=100087656163244&mibextid=D4KYlr", icon: <FaFacebook /> },
+  { href: "https://twitter.com/grovator", icon: <FaTwitter /> },
   { href: "mailto:support@groklearning.com", icon: <FaEnvelope /> },
 ];
 
