@@ -26,37 +26,37 @@ function Sponsors() {
       </div>
       <div className="w-full py-12 bg-white flex flex-col items-center px-4">
         <h2 className="text-gray-800 text-3xl mb-4">About Grok Learning:</h2>
-        <ul className="text-gray-700 text-lg mb-8 text-left max-w-4xl list-disc list-inside">
-          <li>Founded in 2019, by 5 co-founders with extensive experience in co-founding &amp; managing multiple innovative technology companies in both Silicon Valley, USA, and India, the company has been at the forefront of pioneering innovation in education.</li>
-          <li>Their deep passion for fostering a culture of innovation drives the core philosophy of Grok Learning.</li>
-        </ul>
-        <h2 className="text-gray-800 text-3xl mb-4">Mission:</h2>
-        <ul className="text-gray-700 text-lg mb-8 text-left max-w-4xl list-disc list-inside">
-          <li>To unlock the innovative potential of students, empowering them to become future job creators and thought leaders.</li>
-        </ul>
-        <h2 className="text-gray-800 text-3xl mb-4">Vision:</h2>
-        <ul className="text-gray-700 text-lg mb-8 text-left max-w-4xl list-disc list-inside">
-          <li>To cultivate generations of innovators across all fields by leveraging technology, human  intelligence, and creativity.</li>
-        </ul>
-        <h2 className="text-gray-800 text-3xl mb-4">Grok’s Platform:</h2>
-        <ul className="text-gray-700 text-lg mb-8 text-left max-w-4xl list-disc list-inside">
-          <li>We are empowering Educational Institutes using Grovator®, a cloud-based Industry 4.0 integrate 
-            development platform. It combines IoT Cloud Computing, AIoT, Robotics &amp; 3D printing software tools, hardware, knowledge resources &amp; thousands of industrial use cases for learning &amp; building.</li>
-          <li>The platform helps Educational Institutes:
-            <ul className="pl-6">
-              <li>to empower faculties to transform theoretical education into skill-based education.</li>
-              <li>to develop problem-solving and hands-on skills of students.</li>
-              <li>to enable students to create new smart products and services based on real-world industry challenges.</li>
-            </ul>
-          </li>
-        </ul>
-        <h2 className="text-gray-800 text-3xl mb-4">Grok’s Video:</h2>
         <div className="text-gray-700 text-lg mb-8 text-left max-w-4xl">
-          <iframe src="https://player.vimeo.com/video/782551429?h=d0f500764c" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+          <p>Founded in 2019, by 5 co-founders with extensive experience in co-founding &amp; managing multiple innovative technology companies in both Silicon Valley, USA, and India, the company has been at the forefront of pioneering innovation in education.</p>
+          <p>Their deep passion for fostering a culture of innovation drives the core philosophy of Grok Learning.</p>
+        </div>
+        <h2 className="text-gray-800 text-3xl mb-4">Mission:</h2>
+        <div className="text-gray-700 text-lg mb-8 text-left max-w-4xl">
+          <p>To unlock the innovative potential of students, empowering them to become future job creators and thought leaders.</p>
+        </div>
+        <h2 className="text-gray-800 text-3xl mb-4">Vision:</h2>
+        <div className="text-gray-700 text-lg mb-8 text-left max-w-4xl">
+          <p>To cultivate generations of innovators across all fields by leveraging technology, human intelligence, and creativity.</p>
+        </div>
+        <h2 className="text-gray-800 text-3xl mb-4">Grok’s Platform:</h2>
+        <div className="text-gray-700 text-lg mb-8 text-left max-w-4xl">
+          <p>We are empowering Educational Institutes using Grovator®, a cloud-based Industry 4.0 integrate development platform. It combines IoT Cloud Computing, AIoT, Robotics &amp; 3D printing software tools, hardware, knowledge resources &amp; thousands of industrial use cases for learning &amp; building.</p>
+          <p>The platform helps Educational Institutes:</p>
+          <ul className="pl-6">
+            <li>to empower faculties to transform theoretical education into skill-based education.</li>
+            <li>to develop problem-solving and hands-on skills of students.</li>
+            <li>to enable students to create new smart products and services based on real-world industry challenges.</li>
+          </ul>
+        </div>
+        <h2 className="text-gray-800 text-3xl mb-4">Grok’s Video:</h2>
+        <div className="text-gray-700 text-lg mb-8 text-left max-w-4xl w-full">
+          <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+            <iframe src="https://player.vimeo.com/video/782551429?h=d0f500764c" className="absolute top-0 left-0 w-full h-full" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+          </div>
         </div>
         <h2 className="text-gray-800 text-3xl mb-4">Grok’s Platform facilitates Collaboration between Industries & Academic Institutes:</h2>
         <div className="text-gray-700 text-lg mb-8 text-left max-w-7xl">
-          <img src="img/image.png" alt="Collaboration" className="h-auto w-auto lg:h-64"/>
+          <img src="img/image.png" alt="Collaboration" className="h-auto w-auto lg:h-96"/>
         </div>
         <h2 className="text-gray-800 text-3xl mb-4">Success Stories:</h2>
         <ul className="text-gray-700 text-lg mb-8 text-left max-w-4xl list-disc list-inside">
